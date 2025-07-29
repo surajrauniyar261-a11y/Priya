@@ -6,7 +6,28 @@
   <title>My Best Friend - Priya Singh</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-br from-pink-50 to-purple-100 text-gray-800 font-sans">
+<body class="bg-gradient-to-br from-pink-50 to-purple-100 text-gray-800 font-sans relative">
+
+  <!-- Background Music -->
+  <audio id="bg-music" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Music Start Button -->
+  <div id="music-button" class="fixed inset-0 flex items-center justify-center bg-white bg-opacity-80 z-50">
+    <button onclick="playMusic()" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full text-lg shadow-lg transition duration-300">
+      ▶️ Start Music & Enter
+    </button>
+  </div>
+
+  <script>
+    function playMusic() {
+      const audio = document.getElementById("bg-music");
+      audio.play();
+      document.getElementById("music-button").style.display = "none";
+    }
+  </script>
 
   <!-- Header -->
   <header class="text-center py-10 bg-white shadow-md">
@@ -14,29 +35,29 @@
     <p class="mt-2 text-lg">A Tribute to Priya Singh 🌸</p>
   </header>
 
-  <!-- Intro -->
+  <!-- Introduction -->
   <section class="max-w-3xl mx-auto px-4 py-10 text-center">
     <h2 class="text-2xl font-semibold text-purple-600 mb-4">Who is Priya?</h2>
     <p class="text-lg leading-relaxed">
-      Priya Singh is more than a best friend — she's a Friend, a guide, and a constant source of joy. From late-night conversations to spontaneous adventures, Priya has always stood by my side with unmatched loyalty and love.
+      Priya Singh is more than just my best friend — she’s my sunshine on cloudy days, my strongest support, and the one who understands me without a word. Her smile is contagious, her heart is pure, and life is just better with her in it.
     </p>
   </section>
 
-  <!-- Gallery -->
+  <!-- Photo Gallery -->
   <section class="max-w-6xl mx-auto px-4 py-10">
     <h2 class="text-2xl font-semibold text-center text-purple-600 mb-8">Our Memories 📸</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <img src="1.jpg" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-300" alt="Priya Photo 1">
-      <img src="2.jpg" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-300" alt="Priya Photo 1">
-      <img src="3.jpg" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-300" alt="Priya Photo 1">
-      <img src="4.jpg" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-300" alt="Priya Photo 1">
-      <img src="5.jpg" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-300" alt="Priya Photo 1">
-      <img src="6.jpg" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-300" alt="Priya Photo 1">
-      <img src="7.jpg" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-300" alt="Priya Photo 1">
-      <img src="8.jpg" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-300" alt="Priya Photo 1">
-      <img src="9.jpg" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-300" alt="Priya Photo 1">
-      <img src="10.jpg" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-300" alt="Priya Photo 1">
-      
+      <!-- Image list from 1.jpg to 10.jpg -->
+      <img src="1.jpg" alt="Photo 1" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-300">
+      <img src="2.jpg" alt="Photo 2" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-300">
+      <img src="3.jpg" alt="Photo 3" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-300">
+      <img src="4.jpg" alt="Photo 4" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-300">
+      <img src="5.jpg" alt="Photo 5" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-300">
+      <img src="6.jpg" alt="Photo 6" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-300">
+      <img src="7.jpg" alt="Photo 7" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-300">
+      <img src="8.jpg" alt="Photo 8" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-300">
+      <img src="9.jpg" alt="Photo 9" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-300">
+      <img src="10.jpg" alt="Photo 10" class="rounded-2xl shadow-md hover:scale-105 transition-transform duration-300">
     </div>
   </section>
 
@@ -44,7 +65,7 @@
   <section class="max-w-3xl mx-auto px-4 py-10 text-center">
     <h2 class="text-2xl font-semibold text-purple-600 mb-4">Why She's Special</h2>
     <p class="text-lg leading-relaxed">
-      Priya’s compassion, her ability to listen, and the way she makes everyone feel seen and heard — these are just a few of the reasons why I’m forever grateful for her. She brings out the best in me, and in everyone around her. I'm lucky to call her my best friend.
+      From her endless kindness to her unstoppable energy, Priya brings out the best in everyone around her. She's the type of person who will laugh with you in joy and stand by you in pain. I’m forever grateful to have her in my life.
     </p>
   </section>
 
